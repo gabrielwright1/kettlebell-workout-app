@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Kettlebell Workout App</title>
+		<!-- 
+    Kettlebell Workout App:
+
+    Problems to solve: 
+    - While exercising outdoors at the cottage the WIFI signal is too weak to allow me to access Google Stopwatch. 
+    Therefore, an offline app needed to be created to help me complete my workout regimen.
+    - Oftentimes, when using just the Google Stopwatch, I forget which set I am on, or how many of each exercise I have completed. 
+    Therefore, the app needs to keep track of each set count for each exercise so that I can make sure that I'm getting the appropriate quantity in the workout.
+    - At the end of each workout, it would be nice to get a summary of how many reps/sets were completed for the workout.
+    - The app needs to be simple enough to use and navigate during a workout, and automate much of the unnecessary preamble to get started.
+s 
+    Requirements:
+    - Display the time in the middle of the screen
+    - Change the color of the screen during workout vs. rest periods for different workouts
+    - Allow users to reset the counter and timer
+    - Allow users to learn about the workout types using a modal
+-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<ul class="wrapper-controls">
+				<li class="timer-controls">
+					<button data-time="20">Tabata Style</button>
+				</li>
+				<li class="timer-controls">
+					<button data-time="60">HIIT Style</button>
+				</li>
+				<li class="timer-controls"><button id="hint">?</button></li>
+				<li class="timer-controls">
+					<button id="reset" class="hidden">Reset</button>
+				</li>
+				<li class="timer-controls">
+					<span id="timer__total" class="hidden"></span>
+				</li>
+			</ul>
+			<div class="wrapper-display">
+				<div id="modal-hint" class="modal">
+					<div class="modal-content">
+						<span id="modal-close">&times;</span>
+						<div class="modal-details">
+							<p>Tabata Style Workout</p>
+							<ul>
+								<li>20 seconds of activity</li>
+								<li>20 seconds of rest</li>
+							</ul>
+						</div>
+						<div class="modal-details">
+							<p>HIIT Style Workout</p>
+							<ul>
+								<li>1 minute of activity</li>
+								<li>1 minute of rest</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<h1 class="display__time-left resting reset">
+					Pick a Kettlebell Workout
+				</h1>
+				<span class="display__time-message"></span>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

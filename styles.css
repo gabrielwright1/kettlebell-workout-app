@@ -1,0 +1,133 @@
+/* box-sizing reset */
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* elements */
+button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 2px 3px;
+  font-size: 30px;
+}
+button:hover,
+button:focus {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+p {
+  font-weight: bold;
+  text-align: center;
+}
+/* states */
+.active {
+  background-color: lightgreen;
+}
+.resting {
+  background-color: #ff7f7f;
+}
+.reset {
+  background-color: lightgrey;
+}
+/* classes */
+.wrapper-controls {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper-display {
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.display__time-left {
+  height: 100%;
+  display: flex;
+  font-size: 130px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 2px solid black;
+  box-shadow: 2px 3px;
+}
+.display__time-message {
+  font-size: 70px;
+}
+.timer-controls {
+  padding-right: 2%;
+}
+.wrapper {
+  padding: 40px;
+}
+.hidden {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 80px; /* Location of top of box */
+  padding-bottom: 80px; /* Location of bottom of box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 2px 3px;
+}
+.modal-content > ul {
+  margin: 0;
+}
+.modal-details > ul > li {
+  text-align: left;
+  margin-left: 24%;
+}
+#timer__total {
+  right: 48px;
+  padding: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 7px;
+  border: 2px solid black;
+  box-shadow: 2px 3px;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+}
+#modal-close {
+  position: absolute;
+  right: 28%;
+}
+#modal-close:hover,
+#modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
