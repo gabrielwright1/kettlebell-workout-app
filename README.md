@@ -1,5 +1,6 @@
 Kettlebell Workout App
 
+
 Problems to solve: 
 - While exercising outdoors at the cottage the WIFI signal is too weak to allow me to access Google Stopwatch. Therefore, an offline app needed to be created to help me complete my workout regimen.
 - Oftentimes, when using just the Google Stopwatch, I forget which set I am on, or how many of each exercise I have completed. Therefore, the app needs to keep track of each set count for each exercise so that I can make sure that I'm getting the appropriate quantity in the workout.
