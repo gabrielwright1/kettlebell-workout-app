@@ -1,4 +1,4 @@
-Kettlebell Workout App:
+Kettlebell Workout App
 
 Problems to solve: 
 - While exercising outdoors at the cottage the WIFI signal is too weak to allow me to access Google Stopwatch. Therefore, an offline app needed to be created to help me complete my workout regimen.
