@@ -1,4 +1,4 @@
-## Kettlebell Workout App
+## Kettlebell Workout App - Personal Project
 
 Live site:
 - https://gabriel-wright-kettlebell-workout-app.netlify.app/
@@ -16,3 +16,6 @@ Requirements:
 -   Change the color of the screen during workout vs. rest periods for different workouts
 -   Allow users to reset the counter and timer
 -   Allow users to learn about the workout using a modal
+
+Team Members:
+- Gabriel Wright
